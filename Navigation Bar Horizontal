@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Raleway:wght@900&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Montserrat', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house" style="color: #ffac1c;"></i> Home</a>
+		<a id="about_me" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-circle-info" style="color: #ffac1c;"></i> About Me</a>
+		<a id="commissions" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-palette" style="color: #ffac1c;"></i> Commissions</a>
+		<a id="contact" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-share-nodes" style="color: #ffac1c;"></i> Contact</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://romantic-panda-69a.notion.site/Tolondraws-565e8c81d32f4ca6bb3a5df57da7c793?pvs=4", '_blank').focus();
+			else if (id == "about_me")
+				window.open("https://romantic-panda-69a.notion.site/About-Me-d4b24bf52c9b4952886e64a41ec2eb83?pvs=4", '_blank').focus();
+			else if (id == "commissions")
+				window.open("https://romantic-panda-69a.notion.site/Commissions-371b0bd43d384aa4aad62e1c9c6292ea?pvs=4", '_blank').focus();
+			else if (id == "contact")
+				window.open("https://romantic-panda-69a.notion.site/Contact-6e0fb274bd3d4f079e9d43bcd10625ef?pvs=4", '_blank').focus();
+		
+		}
+	</script>
+
+
+</body>
+
+</html>
